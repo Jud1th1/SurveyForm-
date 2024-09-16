@@ -1,0 +1,42 @@
+body{
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    color: #343a40;
+    background-color: #edede9;
+}
+
+.header{ 
+    background-color: #edede9;
+    padding: 50px;
+}
+
+.catpic{
+    width: 100%;
+}
+
+.quiz-form{
+    text-align: left;
+}
+
+/*nav*/
+nav { 
+    position: sticky;
+}
+
+nav> ul{
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+}
+
+nav> ul> li {
+    display: inline;
+    float: left;
+    padding: 14px 16px;
+}
+
+#logo{
+    font-family: "Sofadi One", system-ui;
+    font-size: 20px;
+}

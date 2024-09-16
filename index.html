@@ -6,15 +6,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Free Web tutorials">
 <link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/adc4fa3b86.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <h1 id="title">"Purr-sonality Quiz: Unlock Your Cat's Inner Feline!"</h1>
-    <p id="description">Does your cat deserve the very best in toys, treats, and cozy comforts? Take this fun survey to help us create the purr-sonalized subscription box that fits your cat's unique personality! Whether they’re a playful adventurer, a cuddly nap lover, or a treat connoisseur, we’ve got the perfect box waiting just for them. Answer a few quick questions, and let us tailor each delivery to your feline friend’s exact tastes!</p>
+    <nav>
+      <ul>
+        <li class="active">Home</li>
+        <li>Shop</li>
+        <li>About Us</li>
+        <li style="float:right" id="logo">Purrfect Paws <i class="fa-solid fa-cat"></i></li>
+      </ul>
+    </nav>
 
-    <h2>Purrr-fect Cat Box</h2>
+
+    <div class="header">
+    <h1 id="title">Purr-sonality Quiz: Unlock Your Cat's Inner Feline!</h1>
+    <p id="description">Does your cat deserve the very best in toys, treats, and cozy comforts? Take this fun survey to help us create the purr-sonalized subscription box that fits your cat's unique personality! Whether they’re a playful adventurer, a cuddly nap lover, or a treat connoisseur, we’ve got the perfect box waiting just for them. Answer a few quick questions, and let us tailor each delivery to your feline friend’s exact tastes!</p>
+    <img src="images/catandmouse.jpg" alt="cat playing with mouse" class="catpic">
+    </div>
+
     <form id="survey-form">
+        <div class="quiz-form">
+        <h2>Get the Purrr-fect Cat Box:</h2>
         <label for="petname">What is your pet's name:</label><br>
         <input type="text" id="name" name="petname" required placeholder="Pet's name"><br>
         <label for="number-label" id="number-label">How old is your pet?:</label><br>
@@ -107,8 +126,6 @@
           <label for="quiz" id="answers">c. Mind control to get more treats</label><br>
           <input type="radio" id="quiz-questions" name="age" value="question">
           <label for="quiz" id="answers">d. Unlimited energy for 3 a.m. zoomies</label><br>
-          
-          
 
         <p>What do you want included in your box?</p>
           <input type="checkbox" id="option1" name="option1" value="treats">
@@ -122,10 +139,11 @@
           
 
           <input type="submit" value="Submit" id="submit">
+          </div>
 
         <!----------------------------Subscription-------------------------------------------->
         <div class="subscription">
-        <h2>Subscribe for our newsletter!</h2>
+        <h2>Subscribe to our newsletter!</h2>
         <label for="name-label" id="name-label">Name:</label><br>
         <input type="text" id="name" name="name" required placeholder="Insert your name"><br>
         <label for ="email-label" id="email-label">Email:</label><br>
