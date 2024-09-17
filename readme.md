@@ -37,6 +37,7 @@ The form meets the following requirements:
 ### Screenshot
 
 ![](./Images/screenshot.png)
+![](./images/screenshot.png)
 
 ### Links
 
