@@ -11,7 +11,11 @@ body{
     padding: 50px;
 }
 
-.catpic{
+#title{
+    margin: 50px 0;
+}
+
+.catpic, .cattoypic{
     width: 100%;
 }
 
@@ -43,6 +47,7 @@ nav> ul> li {
 
 section{
     background-color: #a6cbe2;
+    padding: 10px;
 }
 
 .quiz-form{
@@ -57,13 +62,8 @@ section{
     margin: 4px;
 }
 
-#quiz-questions{
-    color: red;
-}
-
 #submit{
     margin-top: 20px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 #submit:hover{
@@ -71,4 +71,68 @@ section{
     color: white;
     border:  1px solid #000;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.myButton {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding: 10px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+} 
+
+footer{
+    color: #9D9F97;
+    font-style: italic;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+}
+
+.quiz-container {
+    display: flex;
+    justify-content: space-between; /* Spreads the form and image apart */
+    align-items: flex-start; /* Aligns them at the top */
+    gap: 0px; /* Adds spacing between the form and image */
+}
+
+.cattoypic {
+    width: 40%; /* Image width is flexible but capped */
+}
+
+.quiz-form {
+    width: 55%; /* Adjust the width of the quiz form */
+}
+
+/* Hide the image on mobile screens */
+@media only screen and (max-width: 800px) {
+    .cattoypic {
+        display: none; /* Hides the image on screens 800px and smaller */
+    }
+
+    .quiz-container {
+        flex-direction: column; /* Stacks the form vertically */
+        align-items: center;
+    }
+
+    .quiz-form {
+        width: 100%; /* Full-width form on mobile */
+    }
 }

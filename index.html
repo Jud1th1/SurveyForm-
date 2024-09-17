@@ -33,7 +33,6 @@
 
     <section>
     <form id="survey-form">
-        
         <h2>Get the Purrr-fect Cat Box:</h2>
         <label for="petname">What is your pet's name:</label><br>
         <input type="text" id="name" name="petname" required placeholder="Pet's name"><br>
@@ -46,8 +45,10 @@
             <option value="chaos">Chaos in fur form</option>
             <option value="introvert">An introverted philosopher</option>
           </select>
-         
+        </section> 
         <!----------------------------Quiz-------------------------------------------->
+        <div class="quiz-container">
+        <img src="images/catwithtoy.jpg" alt="cat with toy" class="cattoypic">
         <div class="quiz-form">
           <p>1. What's your cat's name?</p>
           <input type="radio" id="quiz-questions" name="age" value="question">
@@ -138,12 +139,12 @@
           <label for="option1">Blankets</label><br>
           <input type="checkbox" id="option1" name="option1" value="treats">
           <label for="option1">Treats</label><br>
-          
-
           <input type="submit" value="Submit" id="submit">
           </div>
-      </section>
+          </div>
+      
         <!----------------------------Subscription-------------------------------------------->
+        <section>
         <div class="subscription">
         <h2>Subscribe to our newsletter!</h2>
         <label for="name-label" id="name-label">Name:</label><br>
@@ -153,8 +154,15 @@
         <label for="review">Leave us a comment or review!:</label><br>
         <textarea id="review" name="review" rows="4" cols="50"> My cat says...... </textarea>
         </div>
-
+        <button class="myButton">Subscribe</button>
+        </section>
     </form>
+
+    <footer>
+      <p>Judith Jean-Francois</p>
+      <p>FreeCodeCamp</p>
+      <p>Project 2: Survey Form</p>
+    </footer>
 </body>
 
 </html>
