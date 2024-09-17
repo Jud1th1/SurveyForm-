@@ -15,10 +15,6 @@ body{
     width: 100%;
 }
 
-.quiz-form{
-    text-align: left;
-}
-
 /*nav*/
 nav { 
     position: sticky;
@@ -39,4 +35,40 @@ nav> ul> li {
 #logo{
     font-family: "Sofadi One", system-ui;
     font-size: 20px;
+}
+
+#survey-form{
+    padding: 50px;
+}
+
+section{
+    background-color: #a6cbe2;
+}
+
+.quiz-form{
+    text-align: left;
+}
+
+#name, #number, #dropdown, #submit, #email, #review {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15;
+    margin: 4px;
+}
+
+#quiz-questions{
+    color: red;
+}
+
+#submit{
+    margin-top: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#submit:hover{
+    background-color: black;
+    color: white;
+    border:  1px solid #000;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
