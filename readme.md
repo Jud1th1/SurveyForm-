@@ -36,7 +36,7 @@ The form meets the following requirements:
 
 ### Screenshot
 
-![](./Images/Add%20a%20heading.png)
+![](./Images/screenshot.png)
 
 ### Links
 
